@@ -11,6 +11,8 @@ public class Application {
 		// HelloController helloController = new HelloController();
 
 		// System.out.println(helloController.hello());
+
+		// Started learning Maven
 	}
 
 }
