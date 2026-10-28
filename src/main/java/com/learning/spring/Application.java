@@ -1,5 +1,8 @@
 package com.learning.spring;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
 // import org.springframework.boot.SpringApplication;
 // import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -15,10 +18,14 @@ public class Application {
 		// Started learning Maven
 
 		// Learning DI and IoC in Spring Framework.
-		PaymentService service = new PaymentService();
+		// PaymentService service = new PaymentService();
+		// OrderService order = new OrderService(service);
+		// order.placeOrder();
 
-		OrderService order = new OrderService(service);
-		order.placeOrder();
+		// Learning and Implementing DI and IoC in Spring Framework.
+		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+		OrderService orderService = context.getBean(OrderService.class);
+		orderService.placeOrder();
 	}
 
 }

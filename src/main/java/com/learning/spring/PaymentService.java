@@ -1,5 +1,8 @@
 package com.learning.spring;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PaymentService {
 
     public void pay() {
