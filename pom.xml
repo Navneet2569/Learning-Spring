@@ -73,3 +73,8 @@
 <!-- Learned about Super POM and Effective POM in Maven project and also learned about repository in Maven project. -->
 
 <!-- Learned about Dependency Injection and IoC in Spring Framework. -->
+
+<!-- Learned about types of Dependency Injection in Spring Framework:
+1. Constructor Injection
+2. Setter Injection
+3. Field Injection -->
