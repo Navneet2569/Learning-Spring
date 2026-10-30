@@ -1,6 +1,7 @@
 package com.learning.spring;
 
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 // import org.springframework.boot.SpringApplication;
@@ -26,6 +27,6 @@ public class Application {
 		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		OrderService orderService = context.getBean(OrderService.class);
 		orderService.placeOrder();
+		((ConfigurableApplicationContext) context).close();
 	}
-
 }

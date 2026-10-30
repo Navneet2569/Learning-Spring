@@ -78,5 +78,7 @@
 1. Constructor Injection
 2. Setter Injection
 3. Field Injection -->
+ 
+<!-- Leanred about Bean and Bean definition in Spring Framework.-->
 
-<!-- Leanred about Bean and Bean definition in Spring Framework. -->
+<!-- Learned about Components, Qualifiers, and Primary in Spring Framework. -->
