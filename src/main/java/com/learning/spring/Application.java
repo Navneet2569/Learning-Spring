@@ -27,6 +27,8 @@ public class Application {
 		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 		OrderService orderService = context.getBean(OrderService.class);
 		orderService.placeOrder();
+		User user = context.getBean(User.class);
+		System.out.println(user.getName() + " " + user.getAge());
 		((ConfigurableApplicationContext) context).close();
 	}
 }
