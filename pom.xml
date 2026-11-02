@@ -86,3 +86,5 @@
 <!-- Learned about use of @Bean -->
 
 <!-- Learned about Circular Dependencies in Spring Framework. -->
+
+<!-- Learned about Bean Scopes in Spring Framework. -->
