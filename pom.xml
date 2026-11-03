@@ -88,3 +88,7 @@
 <!-- Learned about Circular Dependencies in Spring Framework. -->
 
 <!-- Learned about Bean Scopes in Spring Framework. -->
+
+<!-- Learned about types of Beans:
+1. Singleton -> Eager initialization
+2. Prototype -> Lazy initialization -->
