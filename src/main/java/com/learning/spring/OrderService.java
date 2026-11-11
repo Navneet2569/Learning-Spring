@@ -1,6 +1,5 @@
 package com.learning.spring;
 
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 import com.learning.spring.payment.PaymentService;
@@ -10,7 +9,7 @@ public class OrderService {
 
     private PaymentService paymentService;
 
-    public OrderService(@Qualifier("card") PaymentService paymentService) {
+    public OrderService(PaymentService paymentService) {
         this.paymentService = paymentService;
     }
 

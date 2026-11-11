@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Qualifier("card")
-public class CardPayment implements PaymentService {
+public class CardPayment extends PaymentService {
     @Override
     public void pay() {
         System.out.println("Paying with card");
